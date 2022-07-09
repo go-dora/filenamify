@@ -19,7 +19,7 @@ const MAX_FILENAME_LENGTH = 100
 func FilenamifyMustCompile(str string) string {
 	output, _ := Filenamify(str, Options{
 		Replacement: "_",
-		MaxLength:   80,
+		MaxLength:   255,
 	})
 	return output
 }
